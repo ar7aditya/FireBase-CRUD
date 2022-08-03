@@ -17,10 +17,10 @@ const ContactForm = (props) => {
    else btn="UPDATE"
 
   useEffect(()=>{
-      //  if(props.currentId===''){
-      //    setValues({...initialFieldValues})
-      //  }
-       if(props.currentId!=='')
+       if(props.currentId===''){
+         setValues({...initialFieldValues})
+       }
+       else
           setValues({
             ...props.contactObjects[props.currentId]
           }
